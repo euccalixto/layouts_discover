@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doc</title>
+  <style>
+    /* Element Stacking */
+    body{
+      height: 300vh;
+    }
+    
+    div{
+      height: 10rem;
+      width: 10rem;
+    }
+
+    div.one{
+      background-color: #0f0;
+      position: absolute;
+      top: 0;
+      left: 0.5rem;
+      top: 0.5rem;
+      z-index: 3;
+    }
+
+    div.two{
+      background-color: #00f;
+      position: absolute;
+      top: 0;
+      left: 1rem;
+      top: 1rem;
+      z-index: 2;
+    }
+
+    div.three{
+      background-color: #ff0;
+      position: absolute;
+      top: 0;
+      left: 2rem;
+      top: 2rem;
+      z-index: 1;
+
+    }
+
+    div.four{
+      background-color: #f50;
+      position: absolute;
+      top: 0;
+      left: 3rem;
+      top: 3rem;
+      z-index: 4;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="one">
+  </div>
+  <div class="two">
+  </div>
+  <div class="three">
+  </div>
+  <div class="four">
+  </div>
+
+</body>
+</html>

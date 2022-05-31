@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doc</title>
+  <style>
+    body{
+      margin: 0;
+      display: grid;
+      grid-template-areas: "header header" "main aside" "footer footer";
+      grid-template-rows: 2rem 1fr 2rem;
+      grid-template-columns: 1fr 80px;
+      height: 100vh;
+    }
+
+    header{
+      background-color: #0f0;
+      padding: 1rem;
+      grid-area: header;
+    }
+
+    main{
+      grid-area: main;
+    }
+
+    aside{
+      background-color: #15f;
+      grid-area: aside;
+    }
+
+    footer{
+      grid-area: footer;
+      background-color: #c4c4c4;
+    }
+  </style>
+</head>
+<body>
+  <header>Header Example</header>
+  <main>
+    <h1>Main Example</h1>
+    <p>This is a example</p>
+  </main>
+  <aside>
+    <p>Adverts</p>
+  </aside>
+  <footer>
+    <p>@euccalixto</p>
+  </footer>
+</body>
+</html>
